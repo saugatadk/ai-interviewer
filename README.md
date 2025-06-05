@@ -1,4 +1,4 @@
-#AI INTERVIEWER
+# AI INTERVIEWER
 
 This is an AI-powered mock interview platform designed to help job seekers practice real-world interview scenarios. It simulates interview experiences tailored to specific job listings and provides instant, personalized feedback. Whether you're a fresh graduate or an experienced professional, Hirementis helps you stay confident and well-prepared.
 
