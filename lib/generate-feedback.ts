@@ -228,8 +228,15 @@ class InterviewFeedbackGenerator {
     try {
       const result = await model.generateContent(prompt);
       const response = await result.response;
-      const text = response.text();
+      var text = response.text();
 
+      // Remove Markdown code block if present
+      text = text.trim();
+      if (text.startsWith("```")) {
+      // Remove the first line (```json or ```) and the last line (```)
+      text = text.replace(/^```[a-zA-Z]*\n?/, "").replace(/```$/, "").trim();
+      }
+      
       try {
         return JSON.parse(text);
       } catch {

@@ -165,6 +165,8 @@ export const useFeedback = (id: string | undefined) => {
     return "bg-red-500";
   };
 
+  console.log("Fetched feedback:", feedbackData);
+
   return {
     isLoading,
     feedbackData,

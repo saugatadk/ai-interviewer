@@ -54,7 +54,7 @@ const JobDetails = () => {
 
   const handleKeySubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (secretKey === process.env.NEXT_PUBLIC_SECRET_KEY||"ashim") {
+    if (secretKey === process.env.NEXT_PUBLIC_SECRET_KEY||"ashim"||"saugat") {
       setShowKeyPrompt(false);
       router.push(`/interview/${job.id}`);
     } else {
